@@ -1,8 +1,8 @@
 'use client'
-export default function Button1() {
+export default function Button2() {
   const handleClick = async () => {
-    console.log('Click 1 happened')
-    const res = await fetch('/api/1')
+    console.log('Click 2 happened')
+    const res = await fetch('/api/2')
     const data = await res.json()
     console.log(data)
   }
@@ -12,7 +12,7 @@ export default function Button1() {
       className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
       onClick={handleClick}
     >
-      Call to Action 1 (edge)
+      Call to Action 2 (nodejs)
     </button>
   )
 }
